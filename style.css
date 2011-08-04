@@ -1,0 +1,90 @@
+body {
+  background:#fff;
+  color:#444;
+  font-family: 'Carme', sans-serif;
+  font-size:14px;
+}
+
+h1 {
+  font-family: 'Rokkitt', serif;
+  font-size:2.5em;
+}
+
+.column {
+  display:inline;
+  float:left;
+  width:25%;
+  margin-right:5%;
+}
+
+.device a {
+  display:block;
+  text-indent:-999em;
+  background:url(sprite.jpg) 0 0 no-repeat;
+  height:410px;
+  opacity:0.35;
+
+  -moz-transition:opacity 0.5s linear;
+  -webkit-transition:opacity 0.5s linear;
+  -o-transition:opacity 0.5s linear;
+  -ms-transition:opacity 0.5s linear;
+  transition:opacity 0.5s linear;
+}
+
+.device article {
+  display:none;
+}
+
+.device a:hover {
+  opacity:0.7;
+}
+
+.device img {
+  display:none;
+}
+
+.iphone a {
+  width:205px;
+  background-position:-10px -410px;
+}
+
+.android a {
+  width:210px;
+  background-position:-550px -410px;
+}
+
+.ipad a {
+  width:307px;
+  background-position:-230px -410px;
+}
+
+.device:target a {
+  opacity:1;
+}
+
+.iphone:target a,
+.iphone a:hover {
+  background-position:-10px 0;
+}
+
+.ipad:target a,
+.ipad a:hover {
+  background-position:-230px 0;
+}
+
+.android:target a,
+.android a:hover {
+  background-position:-550px 0;
+}
+
+.device:target article {
+  display:block;
+}
+
+footer {
+  clear:both;
+  text-align:center;
+  padding-top:40px;
+  font-size:12px;
+  color:#666;
+}
